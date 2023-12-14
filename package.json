@@ -1,0 +1,24 @@
+{
+  "name": "next-adventure",
+  "version": "0.0.1",
+  "homepage": "https://TempestIndra.github.io/INST204final",
+  "private": true,
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "functions": "./bin/copy-functions.js",
+    "dev": "next dev",
+    "build": "next build"
+  },
+  "dependencies": {
+    "@xstate/react": "^1.0.1",
+    "next": "10.2.3",
+    "node-fetch": "^2.6.1",
+    "react": "17.0.1",
+    "react-dom": "17.0.1",
+    "xstate": "^4.13.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0"
+  }
+}
