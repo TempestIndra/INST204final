@@ -1,5 +1,6 @@
 {
   "name": "next-adventure",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:16",
   "version": "0.0.1",
   "homepage": "https://TempestIndra.github.io/INST204final",
   "private": true,
