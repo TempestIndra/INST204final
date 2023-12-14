@@ -25,7 +25,7 @@ const Story = () => {
 
   return (
     <Layout story>
-      <Storyblock>{state.meta[`spookydev.${state.value}`].story}</Storyblock>
+      <Storyblock>{state.meta[`INST240.${state.value}`].Story}</Storyblock>
 
       {state.nextEvents
         .filter((eventType) => !eventType.startsWith('xstate'))
