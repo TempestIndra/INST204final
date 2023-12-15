@@ -11,28 +11,27 @@
   "tasks": {
     "predeploy": {
       "name": "predeploy",
-      "command": "npm run predeploy",
-      "runAtStart": false
+      "command": "npm run predeploy"
     },
     "deploy": {
       "name": "deploy",
-      "command": "npm run deploy",
-      "runAtStart": false
+      "command": "npm run deploy"
     },
     "functions": {
       "name": "functions",
-      "command": "npm run functions",
-      "runAtStart": false
+      "command": "npm run functions"
     },
     "dev": {
       "name": "dev",
       "command": "npm run dev",
-      "runAtStart": true
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
     },
     "build": {
       "name": "build",
-      "command": "npm run build",
-      "runAtStart": false
+      "command": "npm run build"
     }
   }
 }
