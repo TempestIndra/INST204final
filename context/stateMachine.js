@@ -77,7 +77,7 @@ export const storyMachine = (character) => {
       },
       AcceptReason101: {
         meta: {
-          Storage:
+          Story:
             'Strong technical skills and experience: Jane Doe has 5+ years of experience designing, developing, and implementing complex software applications. She is proficient in Java, Python, and C++, and has experience with Spring, Hibernate, Django, MySQL, PostgreSQL, Linux, Windows, AWS, and Azure.\nExperience with diverse projects: Jane Doe has experience working on a variety of projects, including e-commerce platforms, CRM systems, data pipelines, and financial reporting systems. This shows that she is adaptable and can learn new technologies quickly.\n',
         },
         on: {
@@ -91,7 +91,7 @@ export const storyMachine = (character) => {
       },
       RejectReason110: {
         meta: {
-          Storage:
+          Story:
             'A couple of things flagged up on our system as to why she may not be the best candidate for our position. The limited soft skills the summary mentions are “excellent problem-solving and debugging skills,” it’s missing insights into her communication, teamwork, leadership, or adaptability. Another potential red flag are the 5+ years of experience could hide a pattern of short stints at different companies, raising concerns about job stability or potential difficulties adjusting to new environments.',
         },
         on: {
@@ -212,7 +212,7 @@ export const storyMachine = (character) => {
       },
       Resume302: {
         meta: {
-          Storage:
+          Story:
             'Alice Jones\nSummary\nProduct Manager with 5+ years of experience developing and launching successful products. Expertise in identifying and validating product opportunities, translating user needs into product requirements, and managing the product development lifecycle from ideation to launch. Strong understanding of market trends and customer needs.\n\nExperience\n\nABC Products, Anytown, CA\nSenior Product Manager | 2021 - Present\n\nLed the cross-functional team responsible for the development and launch of a new mobile app.\nConducted market research and user interviews to identify and validate product opportunities.\nCreated product roadmaps and managed the product development lifecycle.\nWorked closely with marketing and sales teams to create and execute product launch plans.\nXYZ Products, Anytown, CA\nProduct Manager | 2018 - 2021\n\nManaged the development and launch of a new cloud-based software product.\nCollaborated with engineering, design, and marketing teams to bring the product to market.\nConducted user testing and gathered feedback to improve the product.\nAnalyzed product usage data to identify areas for improvement.\n\nEducation\nAnytown University, Anytown, CA\nMaster of Business Administration | 2020\n',
         },
         on: {
@@ -374,6 +374,10 @@ export const storyMachine = (character) => {
         },
       },
       'Resume412!': {
+        meta: {
+          Story:
+            'Bob Brown\nSummary\n\nSeeking a position in a relaxed and low-pressure environment where I can utilize my limited skills and experience. Prefer to work independently and with minimal supervision, but also have difficulty following instructions and meeting deadlines.\n\nWork Experience\n\nData Entry Clerk, ABC Company, Anytown, CA 2018 - 2020\nCustomer Service Representative, XYZ Company, Anytown, CA 2016 - 2018\nEducation\nAssociate Degree in General Studies, Anytown Community College2016\n\nSkills\nBasic knowledge of Microsoft Office Suite\nLimited understanding of data entry and customer service principles\nAdditional Information\nAvailable to work only on weekdays during regular business hours\nNot willing to relocate for any opportunity\n',
+        },
         on: {
           Back: {
             target: 'AcceptReason312!',
@@ -387,6 +391,10 @@ export const storyMachine = (character) => {
         },
       },
       'Resume421!': {
+        meta: {
+          Story:
+            'Bob Brown\nSummary\n\nSeeking a position in a relaxed and low-pressure environment where I can utilize my limited skills and experience. Prefer to work independently and with minimal supervision, but also have difficulty following instructions and meeting deadlines.\n\nWork Experience\n\nData Entry Clerk, ABC Company, Anytown, CA 2018 - 2020\nCustomer Service Representative, XYZ Company, Anytown, CA 2016 - 2018\nEducation\nAssociate Degree in General Studies, Anytown Community College2016\n\nSkills\nBasic knowledge of Microsoft Office Suite\nLimited understanding of data entry and customer service principles\nAdditional Information\nAvailable to work only on weekdays during regular business hours\nNot willing to relocate for any opportunity\n',
+        },
         on: {
           Back: {
             target: 'RejectReason321!',
@@ -400,6 +408,10 @@ export const storyMachine = (character) => {
         },
       },
       Resume403: {
+        meta: {
+          Story:
+            'Bob Brown\nSummary\n\nSeeking a position in a relaxed and low-pressure environment where I can utilize my limited skills and experience. Prefer to work independently and with minimal supervision, but also have difficulty following instructions and meeting deadlines.\n\nWork Experience\n\nData Entry Clerk, ABC Company, Anytown, CA 2018 - 2020\nCustomer Service Representative, XYZ Company, Anytown, CA 2016 - 2018\nEducation\nAssociate Degree in General Studies, Anytown Community College2016\n\nSkills\nBasic knowledge of Microsoft Office Suite\nLimited understanding of data entry and customer service principles\nAdditional Information\nAvailable to work only on weekdays during regular business hours\nNot willing to relocate for any opportunity\n',
+        },
         on: {
           Back: {
             target: 'AcceptReason303',
@@ -413,6 +425,10 @@ export const storyMachine = (character) => {
         },
       },
       Resume412: {
+        meta: {
+          Story:
+            'Bob Brown\nSummary\n\nSeeking a position in a relaxed and low-pressure environment where I can utilize my limited skills and experience. Prefer to work independently and with minimal supervision, but also have difficulty following instructions and meeting deadlines.\n\nWork Experience\n\nData Entry Clerk, ABC Company, Anytown, CA 2018 - 2020\nCustomer Service Representative, XYZ Company, Anytown, CA 2016 - 2018\nEducation\nAssociate Degree in General Studies, Anytown Community College2016\n\nSkills\nBasic knowledge of Microsoft Office Suite\nLimited understanding of data entry and customer service principles\nAdditional Information\nAvailable to work only on weekdays during regular business hours\nNot willing to relocate for any opportunity\n',
+        },
         on: {
           Back: {
             target: 'RejectReason312',
@@ -427,7 +443,8 @@ export const storyMachine = (character) => {
       },
       'Resume412@': {
         meta: {
-          Story: '',
+          Story:
+            'Bob Brown\nSummary\n\nSeeking a position in a relaxed and low-pressure environment where I can utilize my limited skills and experience. Prefer to work independently and with minimal supervision, but also have difficulty following instructions and meeting deadlines.\n\nWork Experience\n\nData Entry Clerk, ABC Company, Anytown, CA 2018 - 2020\nCustomer Service Representative, XYZ Company, Anytown, CA 2016 - 2018\nEducation\nAssociate Degree in General Studies, Anytown Community College2016\n\nSkills\nBasic knowledge of Microsoft Office Suite\nLimited understanding of data entry and customer service principles\nAdditional Information\nAvailable to work only on weekdays during regular business hours\nNot willing to relocate for any opportunity\n',
         },
         on: {
           Back: {
@@ -735,6 +752,9 @@ export const storyMachine = (character) => {
         },
       },
       'Resume531!': {
+        meta: {
+          Story: '',
+        },
         on: {
           Back: {
             target: 'RejectReason431!',
@@ -850,7 +870,8 @@ export const storyMachine = (character) => {
       },
       Resume513$: {
         meta: {
-          Story: '',
+          Story:
+            'Jane Doe\nSummary\n\nSeeking a position in a challenging and fast-paced environment where I can utilize my limited skills and experience. Proven ability to work independently and with minimal supervision, but also have difficulty following instructions and meeting deadlines.\n\nWork Experience\n\nData Entry Clerk, ABC Company, Anytown, CA\n2018 - 2020\nCustomer Service Representative, XYZ Company, Anytown, CA\n2016 - 2018\nEducation\nAssociate Degree in Business Administration, Anytown Community College\n2016\n\nSkills\nProficient in Microsoft Office Suite\nBasic understanding of data entry and customer service principles\n\nAdditional Information\nAvailable to work evenings and weekends\nWilling to relocate for the right opportunity\n',
         },
         on: {
           Back: {
@@ -1854,7 +1875,6 @@ export const storyMachine = (character) => {
           },
         },
       },
-      Resume5: {},
     },
   };
 };
